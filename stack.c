@@ -35,7 +35,7 @@ int main()
                 show();
                 break;
             case 4:
-                isEmpty();
+                check();
                 break;
             case 5:
                 exit(0);
@@ -52,7 +52,9 @@ void push(int n)
     if (j == size-1)
     {
         printf("\nstack is full!");
-    } else {
+    }
+    else
+    {
         j++;
         stack[j] = n;
     }
@@ -81,7 +83,7 @@ void show()
     return;
 }
 
-void isEmpty()
+void check()
 {
     if (j == -1)
     {
